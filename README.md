@@ -27,7 +27,7 @@ Una aplicación móvil para el sistema de hambulancias donde los paramedicos pue
 https://github.com/JamesHR/Hackathon_covadonga_2021/blob/main/assets/web/01.jpeg
 
 
-<img src="./assets/web/01.jpeg" width=25% align="right" />
+<img src="./assets/web/01.jpeg" width=100% />
 
 
 
