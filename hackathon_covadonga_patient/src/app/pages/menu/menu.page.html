@@ -1,0 +1,107 @@
+<ion-header [translucent]="true">
+    <ion-toolbar mode="ios">
+        <div class="ion-no-border" class="logoLogin itemCenter margenArriba">
+            <img src="../../../assets/img/logo1.png" />
+        </div>
+
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="itemCenter ">
+    <ion-header collapse="condense">
+        <ion-toolbar>
+            <ion-title size="large">Blank</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+
+    <ion-card>
+        <ion-grid>
+            <ion-row>
+                <ion-col size="10">
+                    <ion-card-header>
+                        <ion-card-subtitle>Bienvenido(a):</ion-card-subtitle>
+                        <ion-card-title>Araceli Olmos Vallejo</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                        Folio:237HD32
+                    </ion-card-content>
+                </ion-col>
+                <ion-col size="2">
+                    <ion-button routerLink="/login" fill="clear">
+                        <ion-icon name="exit-outline" size="large" color="medium"></ion-icon>
+                    </ion-button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-card>
+
+
+
+    <ion-grid>
+
+        <ion-row>
+            <ion-col size="6">
+                <ion-card routerLink="/cita" class="ion-text-center">
+                    <ion-card-header>
+                        <ion-icon size="large" name="calendar" color="primary"></ion-icon>
+                    </ion-card-header>
+                    <ion-card-content>
+                        <ion-card-subtitle>Cita médica</ion-card-subtitle>
+                    </ion-card-content>
+                </ion-card>
+
+                <!-- <ion-button expand="block"> <ion-icon name="calendar"></ion-icon>
+        Cita Médica</ion-button> -->
+            </ion-col>
+            <ion-col size="6">
+
+
+                <ion-card routerLink="/expediente" class="ion-text-center">
+                    <ion-card-header>
+                        <ion-icon size="large" color="primary" name="folder-open"></ion-icon>
+                    </ion-card-header>
+
+                    <ion-card-content>
+                        <ion-card-subtitle>Expediente médico</ion-card-subtitle>
+                    </ion-card-content>
+                </ion-card>
+
+
+            </ion-col>
+            <ion-col size="6">
+
+                <ion-card routerLink="/listcitas" class="ion-text-center">
+                    <ion-card-header>
+                        <ion-icon size="large" color="primary" name="folder-open"></ion-icon>
+                    </ion-card-header>
+
+                    <ion-card-content>
+                        <ion-card-subtitle>Citas</ion-card-subtitle>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+            <ion-col size="6">
+
+
+
+                <ion-card class="ion-text-center">
+                    <ion-card-header>
+                        <ion-icon size="large" color="primary" name="pencil"></ion-icon>
+                    </ion-card-header>
+
+                    <ion-card-content>
+                        <ion-card-subtitle>Administrar datos</ion-card-subtitle>
+                    </ion-card-content>
+                </ion-card>
+
+
+            </ion-col>
+        </ion-row>
+
+
+
+
+    </ion-grid>
+
+</ion-content>

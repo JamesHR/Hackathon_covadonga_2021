@@ -1,0 +1,31 @@
+[{
+        "idPatient": "PD632",
+        "curp": "GOMD980528MOCNL00",
+        "name": "Dolores",
+        "lastName": "González",
+        "lastSurName": "Martínez",
+        "address": "calle 12, av 7, col centro, Tuxtepec, Oax",
+        "email": "dolores123@gmail.com",
+        "laspasswordtName": "Efel@ntessVuelan"
+    },
+    {
+        "idPatient": "PD632",
+        "curp": "GADF960926HVZRMR04",
+        "name": "Javier",
+        "lastName": "García",
+        "lastSurName": "Dimas",
+        "address": "Calle 14, Av. 10, col, centro, Amatlán de los Reyes, Ver",
+        "email": "javiersin@gmail.com",
+        "laspasswordtName": "miContra"
+    },
+    {
+        "idPatient": "PD632",
+        "curp": "MOCC940402HVZRNH08",
+        "name": "'Eleazar",
+        "lastName": "Morales",
+        "lastSurName": "Constantino",
+        "address": "Calle 10, Av. 3",
+        "email": "ele@gmail.com",
+        "laspasswordtName": "UnaContra"
+    }
+]

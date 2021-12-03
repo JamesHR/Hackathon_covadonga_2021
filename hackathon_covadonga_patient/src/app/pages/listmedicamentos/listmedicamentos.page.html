@@ -1,0 +1,54 @@
+<ion-toolbar mode="ios" class="contenedorLista">
+    <ion-buttons slot="start" routerLink="/medicamentos">
+        <ion-button>
+            <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+        </ion-button>
+    </ion-buttons>
+    <ion-title>Medicamentos</ion-title>
+    <ion-buttons slot="end" routerLink="/medicamentos">
+        <ion-button>
+            Agregar
+        </ion-button>
+    </ion-buttons>
+</ion-toolbar>
+
+<ion-content>
+    <ion-item-sliding>
+        <ion-item>
+            <ion-label>
+                Paracetamol
+                <p> 1 Cada 8 horas por 7 días</p>
+
+            </ion-label>
+        </ion-item>
+        <ion-item-options>
+            <ion-item-option color="primary">
+                <ion-icon slot="icon-only" ios="ellipsis-horizontal" md="pencil"></ion-icon>
+
+            </ion-item-option>
+            <ion-item-option color="danger">
+                <ion-icon slot="icon-only" name="trash"></ion-icon>
+            </ion-item-option>
+        </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+        <ion-item>
+            <ion-label>
+                Ranitidina
+                <p> 2 Cada 8 horas por 12 días</p>
+
+            </ion-label>
+        </ion-item>
+        <ion-item-options>
+            <ion-item-option color="primary">
+                <ion-icon slot="icon-only" ios="ellipsis-horizontal" md="pencil"></ion-icon>
+
+            </ion-item-option>
+            <ion-item-option color="danger">
+                <ion-icon slot="icon-only" name="trash"></ion-icon>
+            </ion-item-option>
+        </ion-item-options>
+    </ion-item-sliding>
+
+</ion-content>

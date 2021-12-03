@@ -1,0 +1,212 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~ed-grid/ed-grid";
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", "Helvetica Neue", sans-serif;
+    // background-color: #0E4DA4;
+}
+
+// Espacio horizontal
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+
+/* Paleta de colores */
+
+.color-verde {
+    background-color: #1BB55C;
+}
+
+.color-rojo {
+    background-color: #F4511E;
+}
+
+.color-negro {
+    background-color: #263238;
+}
+
+.color-negro-2 {
+    background-color: #1B1C21;
+}
+
+.color-azul {
+    background-color: #0091EA;
+}
+
+.color-amarillo {
+    background-color: #FD9F00;
+}
+
+.color-blanco {
+    background-color: #fdfdfd;
+}
+
+.color-gris {
+    background-color: #F0F0F0;
+}
+
+.color-gris-oscuro {
+    background-color: #979797;
+}
+
+.color-azul-secundario {
+    background-color: #185ADB !important;
+}
+
+// border redondeados
+.bordes-redondeados {
+    border-radius: 10px;
+}
+
+// texto centrado
+.texto-centrado {
+    text-align: center;
+}
+
+// espacio para dar altura ejemplo 1
+.espacio-alatura-1 {
+    height: 10px;
+}
+
+// buttom de los filtros
+.btn-grande {
+    width: 80%;
+}
+
+// buttom de los filtros
+.btn-mediano {
+    width: 45%;
+}
+
+// ------------------------------------------
+// Aqui comienzan estilos para las tablas
+// -------------------------------------------
+// Estilos de los checks en vertical
+.example-radio-group {
+    display: flex;
+    flex-direction: column;
+    // margin: 15px 0;
+    margin-left: 10%;
+}
+
+.example-radio-button {
+    margin: 5px;
+}
+
+// tamanio de la cabecera de la tabla
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+    height: auto;
+}
+
+// Color de fila al pasar mouse
+.mat-row:hover .mat-cell {
+    background-color: #0f61f915;
+    cursor: pointer;
+}
+
+// propiedad para remover el espacio de las tablas
+table {
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 100%;
+}
+
+// tamanio de las columnas
+th {
+    width: auto;
+}
+
+// cambiar el cursor a una manita
+.pointer {
+    cursor: pointer;
+}
+
+// estilos del formulario de busqueda
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+// tamanio del buscador
+.buscador {
+    width: 30%;
+}
+
+// tamanio minimo de todos los buttons
+.mat-raised-button {
+    min-width: 36px !important;
+}
+
+// Espacios de la botonera del crud
+.example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bordes-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.bordes-bottom {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+// Estilos de botones 
+// boton primario 
+.btn-primario {
+    // background: #FFBB12 !important;
+    box-shadow: 0px 4px 8px #014cbd6e !important;
+    border-radius: 16px !important;
+    color: #1B1C21 !important;
+}
+
+// clase de boton activado
+.mat-flat-button.mat-primary,
+.mat-raised-button.mat-primary,
+.mat-fab.mat-primary,
+.mat-mini-fab.mat-primary {
+    background-color: #0F62F9;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px #2979f062;
+}
+
+.btn-bordes-redondeados {
+    border-radius: 25px !important;
+}
+
+.contenedor-btn-formulario {
+    padding: 10px !important;
+}
+
+.btn-aceptar {
+    width: 55%;
+}
+
+.btn-espacio {
+    padding-left: 5% !important;
+}
+
+.btn-cancelar {
+    width: 40%;
+}
+
+.tituloTabla {
+    margin-right: 5px;
+}
+
+.contenedorRadioBtn {
+    padding-left: 10px;
+    padding-right: 10px;
+}

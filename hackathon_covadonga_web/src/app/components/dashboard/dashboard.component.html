@@ -1,0 +1,64 @@
+<mat-sidenav-container class="example-container">
+
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened" (opened)="events.push('open!')" (closed)="events.push('close!')" class="mat-elevation-z8">
+        <!-- <h2>Sidenav Inventario</h2> -->
+        <mat-selection-list [multiple]="false">
+            <div class="contenedor-logo texto-centrado">
+
+                <img src="assets/img/logo.png" class="img-logo">
+                <!-- <p>produce</p> -->
+            </div>
+
+            <!-- Primera seccion -->
+            <mat-list-option class="contenedor-opcion-menu" *ngFor="let opcion of menuLateral " [routerLink]="opcion.redirect">
+                <img matListAvatar class="img-icono" src="assets/img/{{opcion.icono}}">
+                <h2 matLine> {{opcion.nombre}} </h2>
+            </mat-list-option>
+            <!-- Segunda seccion -->
+
+        </mat-selection-list>
+    </mat-sidenav>
+
+    <!-- Aqui comienza en contenido -->
+    <mat-sidenav-content>
+
+        <mat-toolbar>
+            <button mat-raised-button class="btn-menu mat-elevation-z8 color-negro-2" (click)="sidenav.toggle()">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <span>Covadonga Orizaba</span>
+
+            <span class="example-spacer"></span>
+            <img class="img-perfil" matListAvatar src="assets/img/user.png">
+            <h3 class="text-perfil"> Administrador </h3>
+
+            <button mat-icon-button [matMenuTriggerFor]="menu">
+                <mat-icon><span class="material-icons-round">
+                    expand_more
+                    </span></mat-icon>
+              </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>
+                  <mat-icon>person</mat-icon>
+                  <span>Perfil</span>
+                </button>
+                <button mat-menu-item>
+                  <mat-icon>logout</mat-icon>
+                  <span>Cerrar sesion</span>
+                </button>
+            </mat-menu>
+
+
+
+
+
+        </mat-toolbar>
+
+        <div class="contenedor-principal">
+            <router-outlet> </router-outlet>
+        </div>
+
+    </mat-sidenav-content>
+
+    <!-- aqui termina -->
+</mat-sidenav-container>

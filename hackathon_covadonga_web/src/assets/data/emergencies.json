@@ -1,0 +1,126 @@
+[{
+        "folio": "PD632",
+        "triage": "Rojo",
+        "unidad": "Unidad2",
+        "estado": "En camino",
+        "expediente": {
+            "idExpediente": "123345678",
+            "sexo": "Femenimo",
+            "nombre": "Dolores González Martínez"
+        },
+        "signosVitales": {
+            "temperatura": "40",
+            "oxigenoSangre": "10",
+            "precionArterial": "20",
+            "pulsoCardiaco": "40",
+            "frecuenciaRespiratoria": "40"
+        },
+        "agenteCausal": "comio mucho helado",
+        "descripcionTraumatismo": "Complicación respiratoria, irritación de garganta",
+        "causaClinica": "Respiratorio",
+        "Tratamiento": "Oxigeno",
+        "ObservacionesTratamamiento": "Tanque de 30lts conectado a catete",
+        "tiempo": "20",
+        "km": "10"
+    },
+    {
+        "folio": "PD632",
+        "triage": "Amarillo",
+        "unidad": "Unidad2",
+        "estado": "En camino",
+        "expediente": {
+            "idExpediente": "123345678",
+            "sexo": "Femenimo",
+            "nombre": "Juana Santiago Olmos"
+        },
+        "signosVitales": {
+            "temperatura": "40",
+            "oxigenoSangre": "10",
+            "precionArterial": "20",
+            "pulsoCardiaco": "40",
+            "frecuenciaRespiratoria": "40"
+        },
+        "agenteCausal": "comio mucho helado",
+        "descripcionTraumatismo": "Complicación respiratoria, irritación de garganta",
+        "causaClinica": "Respiratorio",
+        "Tratamiento": "Oxigeno",
+        "ObservacionesTratamamiento": "Tanque de 30lts conectado a catete",
+        "tiempo": "20",
+        "km": "10"
+    },
+    {
+        "folio": "PD632",
+        "triage": "Verde",
+        "unidad": "Unidad2",
+        "estado": "En camino",
+        "expediente": {
+            "idExpediente": "123345678",
+            "sexo": "Masculino",
+            "nombre": "Eleazar Morales Constantino"
+        },
+        "signosVitales": {
+            "temperatura": "40",
+            "oxigenoSangre": "10",
+            "precionArterial": "20",
+            "pulsoCardiaco": "40",
+            "frecuenciaRespiratoria": "40"
+        },
+        "agenteCausal": "comio mucho helado",
+        "descripcionTraumatismo": "Complicación respiratoria, irritación de garganta",
+        "causaClinica": "Respiratorio",
+        "Tratamiento": "Oxigeno",
+        "ObservacionesTratamamiento": "Tanque de 30lts conectado a catete",
+        "tiempo": "20",
+        "km": "10"
+    },
+    {
+        "folio": "PD632",
+        "triage": "Rojo",
+        "unidad": "Unidad2",
+        "estado": "En camino",
+        "expediente": {
+            "idExpediente": "123345678",
+            "sexo": "Masculino",
+            "nombre": "Javier García Dimas"
+        },
+        "signosVitales": {
+            "temperatura": "40",
+            "oxigenoSangre": "10",
+            "precionArterial": "20",
+            "pulsoCardiaco": "40",
+            "frecuenciaRespiratoria": "40"
+        },
+        "agenteCausal": "comio mucho helado",
+        "descripcionTraumatismo": "Complicación respiratoria, irritación de garganta",
+        "causaClinica": "Respiratorio",
+        "Tratamiento": "Oxigeno",
+        "ObservacionesTratamamiento": "Tanque de 30lts conectado a catete",
+        "tiempo": "20",
+        "km": "10"
+    },
+    {
+        "folio": "PD632",
+        "triage": "Rojo",
+        "unidad": "Unidad2",
+        "estado": "En camino",
+        "expediente": {
+            "idExpediente": "123345678",
+            "sexo": "Masculino",
+            "nombre": "Javier García Dimas"
+        },
+        "signosVitales": {
+            "temperatura": "40",
+            "oxigenoSangre": "10",
+            "precionArterial": "20",
+            "pulsoCardiaco": "40",
+            "frecuenciaRespiratoria": "40"
+        },
+        "agenteCausal": "comio mucho helado",
+        "descripcionTraumatismo": "Complicación respiratoria, irritación de garganta",
+        "causaClinica": "Respiratorio",
+        "Tratamiento": "Oxigeno",
+        "ObservacionesTratamamiento": "Tanque de 30lts conectado a catete",
+        "tiempo": "20",
+        "km": "10"
+    }
+]

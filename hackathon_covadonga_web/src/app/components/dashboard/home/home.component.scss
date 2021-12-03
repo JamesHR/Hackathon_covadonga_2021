@@ -1,0 +1,33 @@
+.tarjetas-informativas {
+    width: 100%;
+    color: #fff;
+    border-radius: 10px;
+    // height: 120px;
+    // border-radius: 20px;    
+    // background-color: blueviolet;
+}
+
+.degradado-1 {
+    background-image: radial-gradient(circle at 20.12% -14.09%, #ff5a5e 0, #ff4962 25%, #ff3863 50%, #ea2763 75%, #d61863 100%);
+}
+
+.degradado-2 {
+    background-image: radial-gradient(circle at 20.12% -14.09%, #357dff 0, #0066d9 50%, #0050b4 100%);
+}
+
+.degradado-3 {
+    background-image: radial-gradient(circle at 20.12% -14.09%, #56ba00 0, #3cb308 25%, #16ab18 50%, #00a322 75%, #009b29 100%);
+}
+
+.degradado-4 {
+    background-image: radial-gradient(circle at 20.12% -14.09%, #ffab31 0, #ff9935 25%, #ff8738 50%, #f1753a 75%, #e4663d 100%);
+}
+
+table {
+    width: 100%;
+}
+
+.contenedor-tarjeta-img {
+    // width: 80px;
+    // height: 80px;
+}

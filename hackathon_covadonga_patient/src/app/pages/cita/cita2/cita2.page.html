@@ -1,0 +1,45 @@
+<ion-toolbar mode="ios">
+    <ion-buttons slot="start" routerLink="/cita">
+        <ion-button>
+            <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+        </ion-button>
+    </ion-buttons>
+    <ion-title>Agendar cita</ion-title>
+
+
+</ion-toolbar>
+
+<ion-content>
+
+    <ion-card>
+
+        <ion-item>
+            <ion-label>Araceli Olmos Vallejo</ion-label>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="floating">Fecha:</ion-label>
+            <ion-datetime value="2021-12-03T15:43:40.394Z" display-timezone="utc"></ion-datetime>
+
+        </ion-item>
+        <ion-item>
+            <ion-label>Elija la hora :</ion-label>
+            <ion-select>
+                <ion-select-option value="brown">7:00 hrs</ion-select-option>
+                <ion-select-option value="blonde">13:00 hrs</ion-select-option>
+                <ion-select-option value="black">13:30 hrs</ion-select-option>
+                <ion-select-option value="red">15:30 hrs</ion-select-option>
+            </ion-select>
+        </ion-item>
+
+
+
+    </ion-card>
+
+</ion-content>
+<ion-footer class="ion-no-border ion-padding">
+    <ion-toolbar>
+        <ion-button mode="ios" size="block" routerLink="/cita3" color="primary">Continuar</ion-button>
+        <ion-button mode="ios" size="block" routerLink="/menu" color="danger">Cancelar</ion-button>
+    </ion-toolbar>
+</ion-footer>

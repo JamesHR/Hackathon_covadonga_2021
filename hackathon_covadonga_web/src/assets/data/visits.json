@@ -1,0 +1,20 @@
+[{
+        "idVisit": "001 ",
+        "idPatient": "GADFERFEFFER7632",
+        "idVisitStatus": "Agendado",
+        "date": "2021-12-13"
+    },
+    {
+        "idVisit": "002 ",
+        "idPatient": "FSDFSDF2112SDD",
+        "idVisitStatus": "Concelado",
+        "date": "2021-12-13"
+    },
+    {
+        "idVisit": "002 ",
+        "idPatient": "FSDFSDF2112SDD",
+        "idVisitStatus": "Realizado",
+        "date": "2021-11-10"
+    }
+
+]

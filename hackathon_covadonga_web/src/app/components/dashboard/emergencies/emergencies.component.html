@@ -1,0 +1,116 @@
+<div class="ed-grid s-grid-1 m-grid-2 lg-grid-4 xl-grid-4 ">
+
+    <!-- card de filtros -->
+    <article class="card l-block s-cols-1 m-cols-2 lg-cols-1 mat-elevation-z8 bordes-redondeados color-blanco texto-centrado">
+        <div class="texto-centrado">
+            <h2 class="texto-centro">Filtros</h2>
+        </div>
+        <div class="subtitulo">
+            <p>Seleciona el estado</p>
+        </div>
+        <div>
+            <mat-radio-group class="example-radio-group" [(ngModel)]="estado" aria-label="Select an option">
+                <mat-radio-button checked class="example-radio-button" [value]=1 color="accent" color="primary">En camino</mat-radio-button>
+                <mat-radio-button class="example-radio-button" [value]=0 color="accent" color="primary">Recibido</mat-radio-button>
+                <mat-radio-button class="example-radio-button" [value]=2 color="accent" color="primary">En atención</mat-radio-button>
+            </mat-radio-group>
+        </div>
+        <div class="espacio-alatura-1"> </div>
+
+        <!-- <div > -->
+        <button class="btn-grande" color="primary" mat-raised-button (click)="aplicarFiltro()">Aplicar</button>
+        <!-- </div> -->
+        <div class="espacio-alatura-1"> </div>
+
+    </article>
+
+    <!-- card de Tabla -->
+    <div class="card l-block s-cols-2 m-cols-3 lg-cols-3 ">
+        <!-- <div> -->
+
+        <mat-toolbar class="bordes-top">
+            <span>Urgencias</span>
+            <span class="espacioTituloTabla"></span>
+            <mat-chip-list aria-label="Fish selection">
+                <mat-chip *ngIf="filtro == 1" color="warn" selected>En camino</mat-chip>
+                <mat-chip *ngIf="filtro == 0" color="accent" selected>Recibido</mat-chip>
+                <mat-chip *ngIf="filtro == 2" color="primary" selected>En atención</mat-chip>
+            </mat-chip-list>
+            <div class="example-spacer"></div>
+            <mat-form-field class="buscador">
+                <mat-label>Buscar</mat-label>
+                <input matInput (keyup)="applyFilter($event)" #input autocomplete="off">
+            </mat-form-field>
+            <div class="example-spacer"></div>
+            <div class="example-spacer"></div>
+        </mat-toolbar>
+
+        <div>
+            <!-- aqui se define el borde bajo -->
+            <div class="mat-elevation-z8 bordes-bottom">
+
+                <mat-toolbar>
+                    <div class="example-spacer"></div>
+                    <div class="example-flex-container">
+                        <button mat-raised-button matTooltip="Ver mas" class="btn-crud mat-elevation-z8 color-azul" disabled={{btnCrud}} (click)="verDetalle()"><mat-icon>read_more</mat-icon></button>
+                        <button mat-raised-button matTooltip="Eliminar" class="btn-crud mat-elevation-z8 color-rojo" disabled={{btnCrud}} (click)="eliminar()"><mat-icon>delete</mat-icon></button>
+                        <button mat-raised-button matTooltip="Editar" class="btn-crud mat-elevation-z8 color-amarillo" disabled={{btnCrud}} (click)="editar()"><mat-icon>edit</mat-icon></button>
+                        <button mat-raised-button matTooltip="Agregar" class="btn-crud mat-elevation-z8 color-verde" disabled={{!btnCrud}} (click)="agregar()"><mat-icon>add</mat-icon></button>
+                    </div>
+                </mat-toolbar>
+
+                <table mat-table [dataSource]="dataSource" matSort class="color-blanco ">
+                    <!-- Checkbox Column -->
+                    <ng-container matColumnDef="select">
+                        <th mat-header-cell *matHeaderCellDef>
+
+                        </th>
+                        <td mat-cell *matCellDef="let row ">
+                            <mat-checkbox (click)="verSeleccionado(row)" (click)="$event.stopPropagation()" color="primary" (change)="$event ? selection.toggle(row) : null " [checked]="selection.isSelected(row)">
+                                <!-- <mat-checkbox (click)="$event.stopPropagation() " (change)="$event ? selection.toggle(row) : null " [checked]="selection.isSelected(row) " [aria-label]="checkboxLabel(row) "> -->
+                            </mat-checkbox>
+                        </td>
+                    </ng-container>
+                    <ng-container matColumnDef="triage">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Triage </th>
+                        <td mat-cell *matCellDef="let element ">
+                            <mat-chip *ngIf="element.triage == 'Rojo'" color="warn" selected> {{element.triage | uppercase}}</mat-chip>
+                            <mat-chip *ngIf="element.triage == 'Verde'" color="verde" selected> {{element.triage | uppercase}}</mat-chip>
+                            <mat-chip *ngIf="element.triage == 'Amarillo'" color="amarillo" selected> {{element.triage | uppercase}}</mat-chip>
+                        </td>
+
+                    </ng-container>
+
+                    <ng-container matColumnDef="unidad">
+                        <th mat-header-cell *matHeaderCellDef> Unidad </th>
+                        <td mat-cell *matCellDef="let element "> {{element.unidad}} </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="causa">
+                        <th mat-header-cell *matHeaderCellDef> Causa </th>
+                        <td mat-cell *matCellDef="let element "> {{element.causaClinica}} </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="time">
+                        <th mat-header-cell *matHeaderCellDef> Tiempo </th>
+                        <td mat-cell *matCellDef="let element "> {{element.tiempo}} Min. </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="km">
+                        <th mat-header-cell *matHeaderCellDef> Kilometraje </th>
+                        <td mat-cell *matCellDef="let element "> {{element.km}} Km. </td>
+                    </ng-container>
+
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns; " (click)="selection.toggle(row)" (click)="verSeleccionado2(row)"></tr>
+                </table>
+                <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons class="bordes-bottom "></mat-paginator>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>

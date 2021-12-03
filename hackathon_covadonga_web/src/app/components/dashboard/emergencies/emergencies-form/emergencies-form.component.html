@@ -1,0 +1,104 @@
+<div>
+    <div class="itemsInline">
+        <h1>Urgencia
+            <mat-chip *ngIf="data.emergencie.triage == 'Rojo'" color="warn" selected> {{data.emergencie.folio}}</mat-chip>
+            <mat-chip *ngIf="data.emergencie.triage == 'Verde'" color="verde" selected> {{data.emergencie.folio}}</mat-chip>
+            <mat-chip *ngIf="data.emergencie.triage == 'Amarillo'" color="amarillo" selected> {{data.emergencie.folio}}</mat-chip>
+        </h1>
+    </div>
+
+
+    <div class="ed-grid lg-grid-3">
+        <div class="s-cols-2 ed-grid s-grid-2 rows-gap">
+
+            <div>
+                <h2>Datos generales</h2>
+                <mat-list-item role="listitem"><strong>Expediente: </strong>{{data.emergencie.expediente.idExpediente}}</mat-list-item>
+                <mat-list-item role="listitem"><strong>Nombre: </strong> {{data.emergencie.expediente.nombre}}</mat-list-item>
+                <mat-list-item role="listitem"><strong>Sexo: </strong>{{data.emergencie.expediente.sexo}}</mat-list-item>
+
+            </div>
+            <div>
+                <h2>Pre-diagnostico</h2>
+                <mat-list-item role="listitem"> <strong>Agente causal: </strong>{{data.emergencie.agenteCausal}}</mat-list-item>
+                <mat-list-item role="listitem"> <strong>Traumatismo: </strong>{{data.emergencie.descripcionTraumatismo}}</mat-list-item>
+                <mat-list-item role="listitem"><strong>Causa clinica: </strong>{{data.emergencie.causaClinica}}</mat-list-item>
+                <mat-list-item role="listitem"><strong>Tratamiento: </strong>{{data.emergencie.Tratamiento}}</mat-list-item>
+                <mat-list-item role="listitem"><strong>Observaciones: </strong>{{data.emergencie.ObservacionesTratamamiento}}</mat-list-item>
+            </div>
+            <div class="s-cols-3">
+
+                <h2>Signos vitales</h2>
+                <div class="ed-grid s-grid-5">
+                    <div class="card">
+                        <mat-card class="cardMinimo">
+                            <div class="tituloMinimo">
+                                <th>Temperatura</th>
+                            </div>
+                            <p>{{data.emergencie.signosVitales.temperatura}} C</p>
+                        </mat-card>
+                    </div>
+                    <div class="card">
+                        <mat-card class="cardMinimo">
+                            <div class="tituloMinimo">
+                                <th>Oxigeno sangre</th>
+                            </div>
+                            <p>{{data.emergencie.signosVitales.oxigenoSangre}}</p>
+                        </mat-card>
+                    </div>
+                    <div class="card">
+                        <mat-card class="cardMinimo">
+                            <div class="tituloMinimo">
+                                <th>Precion arterial</th>
+                            </div>
+                            <p>{{data.emergencie.signosVitales.precionArterial}}</p>
+                        </mat-card>
+                    </div>
+                    <div class="card">
+                        <mat-card class="cardMinimo">
+                            <div class="tituloMinimo">
+                                <th>Pulso cardiaco</th>
+                            </div>
+                            <p>{{data.emergencie.signosVitales.pulsoCardiaco}}</p>
+                        </mat-card>
+                    </div>
+                    <div class="card">
+                        <mat-card class="cardMinimo">
+                            <div class="tituloMinimo">
+                                <th>Frecuencia respiratoria</th>
+                            </div>
+                            <p>{{data.emergencie.signosVitales.frecuenciaRespiratoria}}</p>
+                        </mat-card>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="paddingMapa">
+            <div class="ed-grid s-grid-4">
+                <div class="card">
+                    <p>{{data.emergencie.estado}}</p>
+                </div>
+                <div class="card">
+                    <p>{{data.emergencie.unidad}}</p>
+                </div>
+                <div class="card">
+                    <p>{{data.emergencie.tiempo}} Min.</p>
+                </div>
+                <div class="card">
+                    <p>{{data.emergencie.km}} Km.</p>
+                </div>
+            </div>
+            <div>
+            </div>
+            <img src="../../../../../assets/img/mapa.jpg">
+            <div class="texto-centrado contenedor-btn-formulario">
+                <button mat-raised-button color="primary" class="btn-aceptar" (click)="onNoClick()">Cerrar</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+</div>

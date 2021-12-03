@@ -1,0 +1,70 @@
+<ion-toolbar mode="ios" class="contenedorLista">
+    <ion-buttons slot="start" routerLink="/login">
+        <ion-button>
+            <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+        </ion-button>
+    </ion-buttons>
+    <ion-title>Registro</ion-title>
+
+</ion-toolbar>
+
+<ion-content fullscreen>
+
+    <ion-list mode="ios" class="contenedorLista">
+
+
+        <div class="margenArriba">
+            <ion-item>
+                <ion-label position="floating">Nombre</ion-label>
+                <ion-input></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Apellido Paterno</ion-label>
+                <ion-input></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Apellido Materno</ion-label>
+                <ion-input></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">
+                    e-mail
+                </ion-label>
+                <ion-input></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Fecha Nacimiento:</ion-label>
+                <ion-datetime value="2021-12-03T15:43:40.394Z" display-timezone="utc"></ion-datetime>
+
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Contraseña</ion-label>
+                <ion-input type="password"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Confirmar contraseña</ion-label>
+                <ion-input type="password"></ion-input>
+            </ion-item>
+            <br><br><br>
+        </div>
+    </ion-list>
+</ion-content>
+
+<ion-footer class="ion-no-border ion-padding">
+
+    <ion-item class="ion-text-center">
+        <ion-item>
+            <ion-checkbox class="ion-margin"></ion-checkbox>
+            <ion-label> <small>He leído y acepto la  <a>política de privacidad</a>
+            </small></ion-label>
+        </ion-item>
+
+    </ion-item>
+    <ion-toolbar>
+
+        <ion-col size="3">
+            <ion-button routerLink="/login" mode="ios" size="block" color="primary">Aceptar</ion-button>
+
+        </ion-col>
+    </ion-toolbar>
+</ion-footer>

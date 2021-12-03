@@ -1,0 +1,62 @@
+<ion-content fullscreen>
+    <ion-list mode="ios" class="contenedorLista">
+        <div class="ion-no-border" class="logoLogin itemCenter margenArriba">
+            <img src="../../../assets/img/logo1.png" />
+        </div>
+        <ion-list-header class="itemCenter">
+            <ion-label class="ion-text-center">
+                Iniciar sesión
+            </ion-label>
+        </ion-list-header>
+
+        <div class="margenArriba">
+            <ion-item>
+                <ion-label position="floating">Curp</ion-label>
+                <ion-input></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Contraseña</ion-label>
+                <ion-input type="password"></ion-input>
+            </ion-item>
+            <br>
+
+            <div class="ion-text-center">
+                <ion-button routerLink="/menu" size="block">Ingresar
+                    <ion-icon slot="end" name="arrow-forward"></ion-icon>
+                </ion-button>
+                <br>
+                <ion-label routerLink="/registro" color="primary">
+                    Registrarme
+                </ion-label>
+            </div>
+
+            <br>
+
+        </div>
+    </ion-list>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+    <ion-toolbar>
+        <ion-tabs>
+            <ion-tab-bar slot="bottom">
+                <ion-tab-button>
+                    <ion-icon name="call-outline"></ion-icon>
+                    <ion-label>Emergencia</ion-label>
+                </ion-tab-button>
+
+                <ion-tab-button>
+                    <ion-icon name="qr-code-outline" color="primary"></ion-icon>
+                    <ion-label color="primary">QR</ion-label>
+                </ion-tab-button>
+
+                <ion-tab-button routerLink="/paquetes">
+                    <ion-icon name="medkit-outline"></ion-icon>
+                    <ion-label>Paquetes</ion-label>
+                </ion-tab-button>
+
+            </ion-tab-bar>
+        </ion-tabs>
+
+    </ion-toolbar>
+</ion-footer>

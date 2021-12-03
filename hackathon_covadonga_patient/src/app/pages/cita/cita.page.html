@@ -1,0 +1,35 @@
+<ion-toolbar mode="ios">
+    <ion-buttons slot="start" routerLink="/menu">
+        <ion-button>
+            <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+        </ion-button>
+    </ion-buttons>
+    <ion-title>Agendar cita</ion-title>
+</ion-toolbar>
+
+<ion-content mode="ios" class="contenedorLista">
+
+    <ion-card>
+        <ion-item>
+            <ion-label>Araceli Olmos Vallejo</ion-label>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Elija la especialidad :</ion-label>
+            <ion-select>
+                <ion-select-option value="brown">Médico Familiar</ion-select-option>
+                <ion-select-option value="blonde">Ginecología</ion-select-option>
+                <ion-select-option value="black">Dental</ion-select-option>
+                <ion-select-option value="red">Pediatría</ion-select-option>
+            </ion-select>
+        </ion-item>
+
+    </ion-card>
+
+</ion-content>
+
+<ion-footer class="ion-no-border ion-padding">
+    <ion-toolbar>
+        <ion-button mode="ios" size="block" routerLink="/cita/cita2" color="primary">Continuar</ion-button>
+    </ion-toolbar>
+</ion-footer>

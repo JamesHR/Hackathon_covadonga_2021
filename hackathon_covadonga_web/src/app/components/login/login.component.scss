@@ -1,0 +1,72 @@
+body {
+    background: url(https://wallpaperboat.com/wp-content/uploads/2020/09/21/55222/medical-15.jpg);
+    background-size: 100%;
+}
+
+.contenedor01 {
+    background-color: rgba(0, 255, 255, 0);
+    height: 25%;
+    // width: 200px;
+}
+
+// Contenedor del login y respectivas mediasQeris
+.contenedor02 {
+    backdrop-filter: blur(10px);
+    text-align: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    height: 80% !important;
+    width: 40%;
+    border-radius: 20px;
+}
+
+@media (max-width: 800px) {
+    .contenedor02 {
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    .contenedor02 {
+        width: 80%;
+    }
+}
+
+.contenedor03 {
+    background-color: rgba(134, 44, 146, 0);
+    height: 25%;
+    // width: 25%
+}
+
+.formulario {
+    // width: 100%;
+    // height: 100%;
+    max-width: 330px;
+    text-align: center;
+    background-color: rgb(34, 34, 34) !important;
+    border-radius: 20px;
+}
+
+.ancho {
+    width: 80%;
+}
+
+.button {
+    height: 50px;
+}
+
+.spinner {
+    margin: 0 auto;
+}
+
+.img-logo {
+    width: 40%;
+    max-width: 300px;
+    padding-top: 10px;
+}
+
+.fuenteMediana {
+    font-size: 16px !important;
+    font-weight: 500;
+    // color: black;
+}

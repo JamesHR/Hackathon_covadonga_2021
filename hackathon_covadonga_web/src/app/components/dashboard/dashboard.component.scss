@@ -1,0 +1,163 @@
+.example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.example-events {
+    width: 300px;
+    height: 200px;
+    overflow: auto;
+    border: 1px solid #555;
+}
+
+.contenedor-principal {
+    // padding: 20%;
+    margin: 1%;
+    /* background-color: #171C28; */
+    /* color: #fff; */
+}
+
+
+/* botones de menu */
+
+.contenedor-opcion-menu {
+    /* background-color: lightcoral; */
+    /* border-radius: 20px; */
+    border-top-right-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    color: #0A1931;
+    border-left: #EFEFEF;
+    border-left-width: 5px;
+    border-left-style: solid;
+}
+
+.contenedor-opcion-menu:hover {
+    background-color: #262626;
+    color: #EFEFEF;
+}
+
+
+/* estas clase son para  */
+
+.btn-menu {
+    display: flex;
+    width: 40px;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 42%;
+    margin: 4px;
+}
+
+.mat-raised-button {
+    min-width: 36px !important;
+}
+
+
+/* eliminar lo redondo de la imagen de los items del menu */
+
+.mat-list-base .mat-list-item .mat-list-avatar,
+.mat-list-base .mat-list-option .mat-list-avatar .img-icono {
+    border-radius: 0%;
+}
+
+
+/* define el tamanio de los iconos del menu */
+
+.mat-list-base .mat-list-item .mat-list-avatar,
+.mat-list-base .mat-list-option .mat-list-avatar {
+    height: 30px;
+    width: 30px;
+}
+
+
+/* altura de los items del menu */
+
+.mat-list-base .mat-list-item.mat-list-item-with-avatar,
+.mat-list-base .mat-list-option.mat-list-item-with-avatar {
+    height: 40px;
+}
+
+
+/* propiedades del contenedor del menu */
+
+.mat-drawer {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    background-color: #EFEFEF;
+}
+
+
+/* texto de los subheaders del menu */
+
+.mat-list-base .mat-subheader {
+    color: rgb(145 145 145);
+}
+
+
+/* contenedor principal del menu */
+
+.mat-drawer-container {
+    background-color: #cecece;
+}
+
+
+/* item seleccionado */
+
+.mat-list-single-selected-option,
+.mat-list-single-selected-option:hover,
+.mat-list-single-selected-option:focus {
+    background-color: #262626;
+    color: #EFEFEF;
+    border-left: #FFC947;
+    border-left-width: 5px;
+    border-left-style: solid;
+    box-shadow: 0px 3px 6px rgba(38, 38, 38, 0.3);
+    border-radius: 0px 18px 18px 0px;
+}
+
+.img-perfil {
+    color: #1B1C21;
+    border-radius: 50%;
+    width: 35px;
+    padding-right: 5px;
+}
+
+.text-perfil {
+    color: #1B1C21;
+    font-size: medium;
+}
+
+
+/* para el nav de arriba */
+
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+    border-radius: 30px;
+    width: auto;
+    margin: 5px;
+    height: 40px;
+    background-color: #cecece00;
+}
+
+.texto-logo {
+    color: #fff;
+    padding: 0;
+}
+
+.img-logo {
+    width: 70%;
+}
+
+.contenedor-logo {
+    width: 200px;
+}

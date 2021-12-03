@@ -1,0 +1,41 @@
+<ion-toolbar mode="ios" class="contenedorLista">
+    <ion-buttons slot="start" routerLink="/enfermedades">
+        <ion-button>
+            <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+        </ion-button>
+    </ion-buttons>
+    <ion-title>Enfermedades Crónicas</ion-title>
+
+
+
+
+</ion-toolbar>
+<ion-content fullscreen>
+
+    <ion-list mode="ios" class="contenedorLista">
+
+
+
+
+        <div class="margenArriba">
+            <ion-item>
+                <ion-label position="floating">Enfermedad:</ion-label>
+                <ion-input></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Observaciones:</ion-label>
+                <ion-input type="password"></ion-input>
+            </ion-item>
+            <br>
+            <div class="ion-no-border ion-padding">
+                <ion-button mode="ios" routerLink="/enfermedades" size="block">Guardar
+                </ion-button>
+                <ion-button mode="ios" routerLink="/expediente" color="danger" size="block">Cancelar
+                </ion-button>
+            </div>
+
+
+
+        </div>
+    </ion-list>
+</ion-content>

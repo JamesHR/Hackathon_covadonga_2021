@@ -1,0 +1,31 @@
+[{
+        "nombre": "Inicio ",
+        "icono": "inicio.png",
+        "redirect": "/dashboard"
+    },
+    {
+        "nombre": "Citas medicas ",
+        "icono": "consulta.png",
+        "redirect": "/dashboard/visits"
+    },
+    {
+        "nombre": "Pacientes",
+        "icono": "personas.png",
+        "redirect": "/dashboard/patients"
+    },
+    {
+        "nombre": "Unidades",
+        "icono": "unidades.png",
+        "redirect": "/dashboard"
+    },
+    {
+        "nombre": "Paramedicos",
+        "icono": "paramedicos.png",
+        "redirect": "/dashboard"
+    },
+    {
+        "nombre": "Urgencias",
+        "icono": "urgencias.png",
+        "redirect": "/dashboard/emergencies"
+    }
+]
