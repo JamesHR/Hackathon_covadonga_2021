@@ -24,5 +24,7 @@ Ademas un sistema web para el control de las citas que los usuarios generaron y 
 Una aplicación móvil para el sistema de hambulancias donde los paramedicos puedan llenar los datos del pacinte que esta atendiendo. 
 
 
+https://github.com/JamesHR/Hackathon_covadonga_2021/blob/main/assets/web/01.jpeg
+
 
 
