@@ -2,7 +2,7 @@
 
 
 
-#Poblemática: 
+# Poblemática: 
 En nuestra vida cotidiana los servicios de salud son sin pensarlo los primeros, nuestra vida no tiene precio, que incluye desde la salud, nuestro bienestar y familiares.
 
 
@@ -16,7 +16,7 @@ En que afecta a las personas:
 
 
 
-#Solución:
+# Solución:
 Generar un sistema digital donde se puedan almacenar las citas y que las personas (usuarios) puedan crear su perfil y ellos mismo poder generar una cita a travez de una app movil, (par este caso). 
 
 Ademas un sistema web para el control de las citas que los usuarios generaron y poder asignar la prioridad en su momento y ser atendidos en las fechas seleccionadas. 
